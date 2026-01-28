@@ -1,0 +1,119 @@
+{
+  "users": [
+    {
+      "id": "user-gdnt",
+      "username": "gudenaite",
+      "nickname": "古德奈特",
+      "avatar": "/static/gdnt.jpg",
+      "persona": "专家型",
+      "tone": "专业、高效、目标导向",
+      "expertise": ["项目管理", "需求分析", "团队协调"],
+      "work_pattern": "注重规划和执行，善于分配任务和把控进度",
+      "role": "user"
+    },
+    {
+      "id": "user-xd",
+      "username": "xiaodao",
+      "nickname": "萧祷",
+      "avatar": "/static/xd.jpg",
+      "persona": "新手型",
+      "tone": "谨慎、求教、细致",
+      "expertise": ["文档编写", "资料整理", "细节完善"],
+      "work_pattern": "善于学习和请教，工作细致但需要指导",
+      "role": "user"
+    },
+    {
+      "id": "user-ymqx",
+      "username": "yimoqianxing",
+      "nickname": "一墨乾行",
+      "avatar": "/static/ymqx.jpg",
+      "persona": "视觉型",
+      "tone": "创意、直观、注重美感",
+      "expertise": ["视觉设计", "图表制作", "界面优化"],
+      "work_pattern": "擅长将信息可视化，注重用户体验",
+      "role": "user"
+    }
+  ],
+
+  "projects": [
+    {
+      "id": "proj-zhyl",
+      "name": "智慧养老APP",
+      "description": "基于IoT技术的全屋智能家居解决方案，支持语音控制和场景联动",
+      "type": "IT开发",
+      "cover": "/static/chair.png",
+      "status": "active",
+      "visibility": "private"
+    },
+    {
+      "id": "proj-xhgm",
+      "name": "辛亥革命论文",
+      "description": "关于辛亥革命的历史论文，包括背景分析、主要事件、历史影响三个部分",
+      "type": "人文报告",
+      "cover": "/static/presentation.png",
+      "status": "active",
+      "visibility": "private"
+    },
+    {
+      "id": "proj-yxfx",
+      "name": "营销分析报告",
+      "description": "市场营销策略分析和优化方案",
+      "type": "商业分析",
+      "cover": "/static/module.png",
+      "status": "active",
+      "visibility": "private"
+    }
+  ],
+
+  "subscription_plans": [
+    {
+      "id": "plan-free",
+      "name": "免费版",
+      "price_monthly": 0,
+      "price_yearly": 0,
+      "features": {
+        "projects": 3,
+        "storage": "500MB",
+        "ai_calls": 50,
+        "team_members": 3,
+        "export": false,
+        "priority_support": false
+      },
+      "is_popular": false,
+      "sort_order": 1
+    },
+    {
+      "id": "plan-pro",
+      "name": "专业版",
+      "price_monthly": 29,
+      "price_yearly": 290,
+      "features": {
+        "projects": -1,
+        "storage": "10GB",
+        "ai_calls": 500,
+        "team_members": 10,
+        "export": true,
+        "priority_support": false
+      },
+      "is_popular": true,
+      "sort_order": 2
+    },
+    {
+      "id": "plan-team",
+      "name": "团队版",
+      "price_monthly": 79,
+      "price_yearly": 790,
+      "features": {
+        "projects": -1,
+        "storage": "100GB",
+        "ai_calls": -1,
+        "team_members": -1,
+        "export": true,
+        "priority_support": true
+      },
+      "is_popular": false,
+      "sort_order": 3
+    }
+  ]
+}
+

@@ -1,0 +1,14 @@
+export default {
+  SUPABASE_URL: 'YOUR_SUPABASE_URL',
+  SUPABASE_ANON_KEY: 'YOUR_SUPABASE_ANON_KEY',
+  
+  USE_BACKEND: false,
+  
+  APP_NAME: 'WorkYeah',
+  APP_VERSION: '1.0.0',
+  
+  API_TIMEOUT: 30000,
+  
+  DEBUG: false
+}
+

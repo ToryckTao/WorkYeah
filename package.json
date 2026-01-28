@@ -1,0 +1,16 @@
+{
+  "name": "workyeah-app",
+  "version": "1.0.0",
+  "description": "WorkYeah 移动端应用",
+  "main": "main.js",
+  "scripts": {
+    "dev": "echo 请使用 HBuilderX 运行项目"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.0"
+  },
+  "devDependencies": {},
+  "keywords": ["uniapp", "workyeah", "supabase"],
+  "license": "MIT"
+}
+

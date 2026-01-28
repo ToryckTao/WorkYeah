@@ -1,10 +1,188 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	"pages": [
+		{
+			"path": "pages/splash/splash",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/register/register",
+			"style": {
+				"navigationBarTitleText": "注册",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white"
+			}
+		},
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "WorkYeah",
+				"navigationStyle": "custom"
 			}
+		},
+		{
+			"path": "pages/profile/profile",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/profile/repositories",
+			"style": {
+				"navigationBarTitleText": "我的仓库",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/profile/favorites",
+			"style": {
+				"navigationBarTitleText": "我的收藏",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/profile/ai-settings",
+			"style": {
+				"navigationBarTitleText": "AI 能力设置",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/profile/subscription",
+			"style": {
+				"navigationBarTitleText": "订阅计划",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/profile/settings",
+			"style": {
+				"navigationBarTitleText": "系统设置",
+				"navigationStyle": "custom"
+			}
+		}
+	],
+	"subPackages": [
+		{
+			"root": "pagesA",
+			"name": "project",
+			"pages": [
+				{
+					"path": "project-detail/project-detail",
+					"style": {
+						"navigationBarTitleText": "项目详情",
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "project-workspace/project-workspace",
+					"style": {
+						"navigationBarTitleText": "项目工作台",
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "projects-showcase/projects-showcase",
+					"style": {
+						"navigationBarTitleText": "项目展示",
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "project-showcase-detail/project-showcase-detail",
+					"style": {
+						"navigationBarTitleText": "项目详情",
+						"navigationStyle": "custom"
+					}
+				}
+			]
+		},
+		{
+			"root": "pagesB",
+			"name": "task",
+			"pages": [
+				{
+					"path": "task-tree/task-tree",
+					"style": {
+						"navigationBarTitleText": "任务树",
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "task-detail/task-detail",
+					"style": {
+						"navigationBarTitleText": "任务详情",
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "progress-analysis/progress-analysis",
+					"style": {
+						"navigationBarTitleText": "产出饱和度分析",
+						"navigationStyle": "custom"
+					}
+				}
+			]
+		},
+		{
+			"root": "pagesC",
+			"name": "other",
+			"pages": [
+				{
+					"path": "schedule/schedule",
+					"style": {
+						"navigationBarTitleText": "日程",
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "marketplace/marketplace",
+					"style": {
+						"navigationBarTitleText": "工作流集市",
+						"navigationStyle": "custom",
+						"enablePullDownRefresh": true
+					}
+				},
+				{
+					"path": "ai-chat/ai-chat",
+					"style": {
+						"navigationBarTitleText": "小耶助手",
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "recruitment/recruitment",
+					"style": {
+						"navigationBarTitleText": "招募中心",
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "assets/assets",
+					"style": {
+						"navigationBarTitleText": "资产",
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "calendar/calendar",
+					"style": {
+						"navigationBarTitleText": "日历",
+						"navigationStyle": "custom"
+					}
+				}
+			]
 		}
 	],
 	"globalStyle": {
@@ -12,6 +190,22 @@
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"custom": true,
+		"color": "#94a3b8",
+		"selectedColor": "#336df4",
+		"backgroundColor": "#ffffff",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/profile/profile",
+				"text": "我的"
+			}
+		]
 	},
 	"uniIdRouter": {}
 }

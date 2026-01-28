@@ -74,3 +74,133 @@ $uni-color-subtitle: #555555; // 二级标题颜色
 $uni-font-size-subtitle:26px;
 $uni-color-paragraph: #3F536E; // 文章段落颜色
 $uni-font-size-paragraph:15px;
+
+/* ============================================ */
+/* WorkYeah 自定义主题变量 (从 Web 端迁移)      */
+/* ============================================ */
+
+/* 主题色 - 蓝色系 */
+$workyeah-primary: #336df4; // 主要蓝色
+$workyeah-primary-light: #5b8cff; // 浅蓝色
+$workyeah-primary-dark: #2557d6; // 深蓝色
+$workyeah-primary-foreground: #ffffff; // 主色前景
+
+/* 背景色 */
+$workyeah-background: #ffffff; // 主背景
+$workyeah-background-secondary: #e0e6f7; // 次要背景（侧边栏背景）
+$workyeah-foreground: #0f172a; // 前景文字
+
+/* 卡片 */
+$workyeah-card: #ffffff;
+$workyeah-card-foreground: #0f172a;
+
+/* 弹出层 */
+$workyeah-popover: #ffffff;
+$workyeah-popover-foreground: #0f172a;
+
+/* 次要色 */
+$workyeah-secondary: #f8fafc; // 浅蓝灰背景
+$workyeah-secondary-foreground: #334155; // 次要前景
+
+/* 柔和色 */
+$workyeah-muted: #f8fafc;
+$workyeah-muted-foreground: #64748b;
+
+/* 强调色 */
+$workyeah-accent: #f1f5f9;
+$workyeah-accent-foreground: #334155;
+
+/* 破坏性操作 */
+$workyeah-destructive: #ef4444;
+$workyeah-destructive-foreground: #ffffff;
+
+/* 边框和输入框 */
+$workyeah-border: #e2e8f0;
+$workyeah-input: #e2e8f0;
+$workyeah-ring: #336df4; // 焦点环
+
+/* 圆角 */
+$workyeah-radius: 12px;
+$workyeah-radius-sm: 8px;
+$workyeah-radius-md: 10px;
+$workyeah-radius-lg: 12px;
+$workyeah-radius-xl: 16px;
+
+/* 侧边栏 */
+$workyeah-sidebar: #fcfdfe;
+$workyeah-sidebar-foreground: #0f172a;
+$workyeah-sidebar-primary: #336df4;
+$workyeah-sidebar-primary-foreground: #ffffff;
+$workyeah-sidebar-accent: #f8fafc;
+$workyeah-sidebar-accent-foreground: #334155;
+$workyeah-sidebar-border: #eff2f7;
+$workyeah-sidebar-ring: #336df4;
+
+/* Slate 灰度色系 */
+$workyeah-slate-50: #f8fafc;
+$workyeah-slate-100: #f1f5f9;
+$workyeah-slate-200: #e2e8f0;
+$workyeah-slate-300: #cbd5e1;
+$workyeah-slate-400: #94a3b8;
+$workyeah-slate-500: #64748b;
+$workyeah-slate-600: #475569;
+$workyeah-slate-700: #334155;
+$workyeah-slate-800: #1e293b;
+$workyeah-slate-900: #0f172a;
+
+/* Gray 灰度色系 */
+$workyeah-gray-50: #f9fafb;
+$workyeah-gray-100: #f3f4f6;
+$workyeah-gray-200: #e5e7eb;
+$workyeah-gray-300: #d1d5db;
+$workyeah-gray-400: #9ca3af;
+$workyeah-gray-500: #6b7280;
+$workyeah-gray-600: #4b5563;
+$workyeah-gray-700: #374151;
+$workyeah-gray-800: #1f2937;
+$workyeah-gray-900: #111827;
+
+/* 状态色 */
+$workyeah-success: #10b981; // 成功 - 绿色
+$workyeah-success-light: #d1fae5;
+$workyeah-success-dark: #065f46;
+
+$workyeah-warning: #f59e0b; // 警告 - 橙色
+$workyeah-warning-light: #fef3c7;
+$workyeah-warning-dark: #92400e;
+
+$workyeah-error: #ef4444; // 错误 - 红色
+$workyeah-error-light: #fee2e2;
+$workyeah-error-dark: #991b1b;
+
+$workyeah-info: #3b82f6; // 信息 - 蓝色
+$workyeah-info-light: #dbeafe;
+$workyeah-info-dark: #1e40af;
+
+/* 图表色系 */
+$workyeah-chart-1: #336df4;
+$workyeah-chart-2: #5b8cff;
+$workyeah-chart-3: #2557d6;
+$workyeah-chart-4: #8b5cf6;
+$workyeah-chart-5: #6366f1;
+
+/* 阴影 */
+$workyeah-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+$workyeah-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+$workyeah-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+$workyeah-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+$workyeah-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+/* 过渡时间 */
+$workyeah-transition-fast: 150ms;
+$workyeah-transition-base: 200ms;
+$workyeah-transition-slow: 300ms;
+
+/* Z-index 层级 */
+$workyeah-z-dropdown: 1000;
+$workyeah-z-sticky: 1020;
+$workyeah-z-fixed: 1030;
+$workyeah-z-modal-backdrop: 1040;
+$workyeah-z-modal: 1050;
+$workyeah-z-popover: 1060;
+$workyeah-z-tooltip: 1070;
