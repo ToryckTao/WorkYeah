@@ -82,29 +82,29 @@
 					"path": "project-detail/project-detail",
 					"style": {
 						"navigationBarTitleText": "项目详情",
-						"navigationStyle": "custom"
-					}
-				},
-				{
+				"navigationStyle": "custom"
+			}
+		},
+		{
 					"path": "project-workspace/project-workspace",
-					"style": {
+			"style": {
 						"navigationBarTitleText": "项目工作台",
-						"navigationStyle": "custom"
-					}
-				},
-				{
+				"navigationStyle": "custom"
+			}
+		},
+		{
 					"path": "projects-showcase/projects-showcase",
-					"style": {
-						"navigationBarTitleText": "项目展示",
-						"navigationStyle": "custom"
-					}
-				},
-				{
+			"style": {
+				"navigationBarTitleText": "项目展示",
+				"navigationStyle": "custom"
+			}
+		},
+		{
 					"path": "project-showcase-detail/project-showcase-detail",
-					"style": {
-						"navigationBarTitleText": "项目详情",
-						"navigationStyle": "custom"
-					}
+			"style": {
+				"navigationBarTitleText": "项目详情",
+				"navigationStyle": "custom"
+			}
 				}
 			]
 		},
@@ -118,20 +118,20 @@
 						"navigationBarTitleText": "任务树",
 						"navigationStyle": "custom"
 					}
-				},
-				{
+		},
+		{
 					"path": "task-detail/task-detail",
-					"style": {
+			"style": {
 						"navigationBarTitleText": "任务详情",
-						"navigationStyle": "custom"
-					}
-				},
-				{
+				"navigationStyle": "custom"
+			}
+		},
+	{
 					"path": "progress-analysis/progress-analysis",
-					"style": {
-						"navigationBarTitleText": "产出饱和度分析",
-						"navigationStyle": "custom"
-					}
+		"style": {
+			"navigationBarTitleText": "产出饱和度分析",
+			"navigationStyle": "custom"
+		}
 				}
 			]
 		},
@@ -145,8 +145,8 @@
 						"navigationBarTitleText": "日程",
 						"navigationStyle": "custom"
 					}
-				},
-				{
+	},
+	{
 					"path": "marketplace/marketplace",
 					"style": {
 						"navigationBarTitleText": "工作流集市",
@@ -156,31 +156,31 @@
 				},
 				{
 					"path": "ai-chat/ai-chat",
-					"style": {
+		"style": {
 						"navigationBarTitleText": "小耶助手",
-						"navigationStyle": "custom"
-					}
-				},
-				{
+			"navigationStyle": "custom"
+		}
+	},
+	{
 					"path": "recruitment/recruitment",
-					"style": {
+		"style": {
 						"navigationBarTitleText": "招募中心",
-						"navigationStyle": "custom"
-					}
-				},
-				{
+			"navigationStyle": "custom"
+		}
+	},
+	{
 					"path": "assets/assets",
-					"style": {
+		"style": {
 						"navigationBarTitleText": "资产",
-						"navigationStyle": "custom"
-					}
-				},
-				{
+			"navigationStyle": "custom"
+		}
+	},
+		{
 					"path": "calendar/calendar",
-					"style": {
-						"navigationBarTitleText": "日历",
-						"navigationStyle": "custom"
-					}
+			"style": {
+				"navigationBarTitleText": "日历",
+				"navigationStyle": "custom"
+			}
 				}
 			]
 		}

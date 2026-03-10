@@ -454,44 +454,7 @@ export default {
   },
   methods: {
     loadMessages: function() {
-      if (this.projectName === '辛亥革命论文') {
-        this.messages = [
-          { id: 1, sender: '系统', content: '小耶 已创建群组 · 11月5日 14:00', time: '', type: 'system' },
-          { id: 2, sender: '萧祷', content: '我整理了一些课程资料，上传到任务文件区了。', time: '下午2:15', type: 'user', avatar: 'https://workyean.oss-cn-beijing.aliyuncs.com/static/xd.jpg', files: [
-            { name: '课程指南.pdf', size: '1.2 MB', icon: 'file' }
-          ]},
-          { id: 3, sender: '小耶', content: '已解析完成！这是一篇关于辛亥革命的历史论文，要求包括：背景分析、主要事件、历史影响三个部分。我已经为你们生成了初步的工作分解结构，可以在任务树中查看。', time: '下午2:16', type: 'ai', avatar: 'https://workyean.oss-cn-beijing.aliyuncs.com/static/littleyeah.jpg' },
-          { id: 4, sender: '古德奈特', content: '太好了！那我负责背景部分，萧祷你负责主要事件？', time: '下午2:18', type: 'self', avatar: 'https://workyean.oss-cn-beijing.aliyuncs.com/static/gdnt.jpg' },
-          { id: 5, sender: '萧祷', content: '好的，没问题！我开始整理主要事件的时间线。', time: '下午2:20', type: 'user', avatar: 'https://workyean.oss-cn-beijing.aliyuncs.com/static/xd.jpg' },
-          { id: 6, sender: '系统', content: '11月8日 上午10:00', time: '', type: 'system' },
-          { id: 7, sender: '一墨乾行', content: '我找到一些历史资料的图片，已经上传到资产库了，可以用在报告里。', time: '上午10:05', type: 'user', avatar: 'https://workyean.oss-cn-beijing.aliyuncs.com/static/ymqx.jpg', files: [
-            { name: '辛亥革命图片集.zip', size: '8.5 MB', icon: 'image' }
-          ]},
-          { id: 8, sender: '小耶', content: '很好！这些历史图片质量不错，我已经为它们添加了标注和说明，可以直接在报告预览中看到效果。', time: '上午10:06', type: 'ai', avatar: 'https://workyean.oss-cn-beijing.aliyuncs.com/static/littleyeah.jpg' }
-        ]
-      } else if (this.projectName === '营销分析报告') {
-        this.messages = [
-          { id: 1, sender: '系统', content: '小耶 已创建群组 · 10月15日 10:00', time: '', type: 'system' },
-          { id: 2, sender: '萧祷', content: '我整理了一些补充资料，包括产品演示视频、用户画像分析和原始调研数据。这次的KOL投放ROI比预期高30%，私域流量的转化漏斗也优化了。根据A/B测试结果，新版落地页的跳出率明显下降，复购率提升显著。', time: '下午3:45', type: 'user', avatar: 'https://workyean.oss-cn-beijing.aliyuncs.com/static/xd.jpg', files: [
-            { name: '产品演示视频.mp4', size: '15.8 MB', icon: 'video' },
-            { name: '市场分析报告.md', size: '128 KB', icon: 'file' },
-            { name: '原始调研数据.zip', size: '4.2 MB', icon: 'archive' }
-          ]},
-          { id: 3, sender: '小耶', content: '已收到萧祷的补充资料！产品演示视频展示了完整的用户体验流程，市场分析报告包含了详细的用户画像和竞品分析，原始调研数据中有2000+份问卷结果。这些资料已同步到资产面板，可以用来支撑我们的营销策略优化。', time: '下午3:48', type: 'ai', avatar: 'https://workyean.oss-cn-beijing.aliyuncs.com/static/littleyeah.jpg' }
-        ]
-      } else if (this.projectName === '智慧养老APP') {
-        this.messages = [
-          { id: 1, sender: '系统', content: '小耶 已创建群组 · 10月10日 09:00', time: '', type: 'system' },
-          { id: 2, sender: '萧祷', content: '我已经更新了用户界面的UX流程模型。新的设计包含了更好的无障碍选项，特别适合老年用户。', time: '上午10:24', type: 'user', avatar: 'https://workyean.oss-cn-beijing.aliyuncs.com/static/xd.jpg', files: [
-            { name: '用户界面模型.sketch', size: '3.8 MB', icon: 'palette' }
-          ]},
-          { id: 3, sender: '小耶', content: '已检测到萧祷上传的新文件。正在自动归档模型到资产面板。设计更新符合任务3.2中的无障碍要求。', time: '上午10:25', type: 'ai', avatar: 'https://workyean.oss-cn-beijing.aliyuncs.com/static/littleyeah.jpg' },
-          { id: 4, sender: '古德奈特', content: '太好了！一墨乾行，你能帮忙实现用户数据存储的功能吗？我们需要保存用户的药物清单和紧急联系人。', time: '上午11:15', type: 'self', avatar: 'https://workyean.oss-cn-beijing.aliyuncs.com/static/gdnt.jpg' },
-          { id: 5, sender: '一墨乾行', content: '好的，我会尽快实现这个功能。', time: '上午11:20', type: 'user', avatar: 'https://workyean.oss-cn-beijing.aliyuncs.com/static/ymqx.jpg' }
-        ]
-      } else {
-        this.messages = []
-      }
+      this.messages = []
       this.nextMessageId = this.messages.length + 1
       this.$nextTick(() => {
         this.scrollToBottom()

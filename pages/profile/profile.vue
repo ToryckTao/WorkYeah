@@ -15,29 +15,27 @@
         <view class="header-content">
           <!-- 头像和基本信息 -->
           <view class="profile-main">
-            <image class="avatar" src="https://workyean.oss-cn-beijing.aliyuncs.com/static/gdnt.jpg" mode="aspectFill"></image>
+            <image class="avatar" src="https://workyean.oss-cn-beijing.aliyuncs.com/static/default-avatar.png" mode="aspectFill"></image>
             <view class="profile-info">
-              <text class="profile-name">古德奈特</text>
-              <text class="profile-handle">@wangyihan_dev</text>
+              <text class="profile-name">新用户</text>
+              <text class="profile-handle">@username</text>
               <view class="ai-badge">
                 <image src="https://workyean.oss-cn-beijing.aliyuncs.com/static/star.png" class="badge-icon-img" mode="aspectFit"></image>
-                <text class="badge-text">AI 人设：全栈架构师</text>
+                <text class="badge-text">AI 人设：未设置</text>
               </view>
             </view>
           </view>
 
-          <!-- 个人简介 -->
-          <text class="bio-text">用AI构建智能系统 · 开源爱好者 · WorkYeah重度用户</text>
+          <text class="bio-text">点击编辑个人简介</text>
 
-          <!-- 元信息 -->
           <view class="meta-info">
             <view class="meta-item">
               <image src="https://workyean.oss-cn-beijing.aliyuncs.com/static/school.png" class="meta-icon-img" mode="aspectFit"></image>
-              <text class="meta-text">天津大学</text>
+              <text class="meta-text">未设置</text>
             </view>
             <view class="meta-item">
               <image src="https://workyean.oss-cn-beijing.aliyuncs.com/static/location.png" class="meta-icon-img" mode="aspectFit"></image>
-              <text class="meta-text">天津，中国</text>
+              <text class="meta-text">未设置</text>
             </view>
           </view>
 
@@ -51,22 +49,22 @@
       <view class="stats-grid animate-fadeInUp">
         <view class="stat-card">
           <image src="https://workyean.oss-cn-beijing.aliyuncs.com/static/project.png" class="card-icon-img" mode="aspectFit"></image>
-          <text class="card-value">8</text>
+          <text class="card-value">0</text>
           <text class="card-label">项目数</text>
         </view>
         <view class="stat-card">
           <image src="https://workyean.oss-cn-beijing.aliyuncs.com/static/task-alt.png" class="card-icon-img" mode="aspectFit"></image>
-          <text class="card-value">24</text>
+          <text class="card-value">0</text>
           <text class="card-label">任务数</text>
         </view>
         <view class="stat-card">
           <image src="https://workyean.oss-cn-beijing.aliyuncs.com/static/community-alt.png" class="card-icon-img" mode="aspectFit"></image>
-          <text class="card-value">5</text>
+          <text class="card-value">0</text>
           <text class="card-label">团队数</text>
         </view>
         <view class="stat-card">
           <image src="https://workyean.oss-cn-beijing.aliyuncs.com/static/contribution.png" class="card-icon-img" mode="aspectFit"></image>
-          <text class="card-value">156</text>
+          <text class="card-value">0</text>
           <text class="card-label">贡献数</text>
         </view>
       </view>
@@ -75,7 +73,7 @@
       <view class="activity-card animate-fadeInUp">
         <view class="activity-header">
           <text class="activity-title">本周活动</text>
-          <text class="activity-count">32 次贡献</text>
+          <text class="activity-count">0 次贡献</text>
         </view>
         <view class="activity-bars">
           <view class="bar-item" v-for="(day, index) in weekActivity" :key="index">
@@ -248,22 +246,21 @@ export default {
     return {
       // 本周活动数据
       weekActivity: [
-        { label: '周一', height: '60%' },
-        { label: '周二', height: '80%' },
-        { label: '周三', height: '45%' },
-        { label: '周四', height: '90%' },
-        { label: '周五', height: '70%' },
-        { label: '周六', height: '30%' },
-        { label: '周日', height: '50%' }
+        { label: '周一', height: '0%' },
+        { label: '周二', height: '0%' },
+        { label: '周三', height: '0%' },
+        { label: '周四', height: '0%' },
+        { label: '周五', height: '0%' },
+        { label: '周六', height: '0%' },
+        { label: '周日', height: '0%' }
       ],
       
-      // 雷达图数据
       radarData: [
-        { label: '代码能力', value: 85, max: 100 },
-        { label: '文档能力', value: 88, max: 100 },
-        { label: '逻辑思维', value: 92, max: 100 },
-        { label: '风险感知', value: 78, max: 100 },
-        { label: '上下文理解', value: 90, max: 100 }
+        { label: '代码能力', value: 0, max: 100 },
+        { label: '文档能力', value: 0, max: 100 },
+        { label: '逻辑思维', value: 0, max: 100 },
+        { label: '风险感知', value: 0, max: 100 },
+        { label: '上下文理解', value: 0, max: 100 }
       ],
       
       // 问卷相关状态

@@ -1,0 +1,9 @@
+{
+  "name": "ai-chat",
+  "version": "1.0.0",
+  "description": "AI Chat 云函数 - WorkYeah 智能助手接口",
+  "main": "index.js",
+  "keywords": ["ai", "chat", "workyeah"],
+  "dependencies": {}
+}
+

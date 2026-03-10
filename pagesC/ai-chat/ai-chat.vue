@@ -126,21 +126,13 @@ export default {
       inputValue: '',
       messages: [],
       isAITyping: false,
-      scrollTop: 0
+      scrollTop: 0,
+      conversationId: ''
     }
   },
   
   onLoad: function() {
-    // 模拟AI主动发送智能提示
-    var self = this
-    setTimeout(function() {
-      self.messages.push({
-        sender: 'ai',
-        content: '检测到你正在进行"智慧养老APP"项目。我已为你分析了当前进度，发现以下风险点需要关注。',
-        quickButtons: ['查看风险点', '生成任务清单', '项目进度分析']
-      })
-      self.scrollToBottom()
-    }, 1500)
+    this.conversationId = 'conv_' + Date.now()
   },
   
   methods: {
@@ -154,7 +146,6 @@ export default {
         return
       }
       
-      // 添加用户消息
       this.messages.push({
         sender: 'user',
         content: this.inputValue
@@ -164,27 +155,47 @@ export default {
       this.inputValue = ''
       this.scrollToBottom()
       
-      // 模拟AI回复
       this.isAITyping = true
-      setTimeout(function() {
+      
+      uniCloud.callFunction({
+        name: 'ai-chat',
+        data: {
+          action: 'chat',
+          message: userInput,
+          conversationId: self.conversationId
+        }
+      }).then(function(res) {
+        self.isAITyping = false
+        if (res.result && res.result.code === 0) {
+          self.messages.push({
+            sender: 'ai',
+            content: res.result.data.message
+          })
+        } else {
+          self.messages.push({
+            sender: 'ai',
+            content: self.getLocalResponse(userInput)
+          })
+        }
+        self.scrollToBottom()
+      }).catch(function(err) {
+        console.error('AI Chat Error:', err)
         self.isAITyping = false
         self.messages.push({
           sender: 'ai',
-          content: self.getAIResponse(userInput)
+          content: self.getLocalResponse(userInput)
         })
         self.scrollToBottom()
-      }, 2000)
+      })
     },
     
-    getAIResponse: function(userInput) {
-      // 简单的AI回复逻辑
+    getLocalResponse: function(userInput) {
       var responses = {
         '风险': '根据项目分析，当前主要风险点包括：1. 后端API未完成，影响前端联调 2. UI设计稿未最终确认 3. 测试时间较紧张。建议优先完成API开发。',
         '任务': '已为你生成任务清单：\n1. 完成用户登录模块\n2. 实现健康数据监测功能\n3. 开发老人社区功能\n4. 进行UI优化\n\n任务已同步到项目工作台。',
         '进度': '项目"智慧养老APP"当前进度：65%\n✅ 已完成：需求分析、原型设计\n🔄 进行中：功能开发\n⏳ 待开始：测试、上线部署',
         'default': '我理解你的问题。基于当前项目上下文，我建议你可以先查看项目工作台的任务分解，或者让我帮你分析具体的问题。'
       }
-      
       for (var key in responses) {
         if (userInput.indexOf(key) !== -1) {
           return responses[key]
@@ -209,7 +220,6 @@ export default {
           })
           self.scrollToBottom()
           
-          // 模拟AI分析图片
           self.isAITyping = true
           setTimeout(function() {
             self.isAITyping = false

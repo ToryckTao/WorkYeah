@@ -347,20 +347,20 @@
             />
             <view class="message-content">
               <view class="message-bubble ai-bubble">
-                <text class="message-text">检测到队长上传了《近代史大作业.pdf》。我已为你提取了其中的评分标准，是否需要查看？</text>
+                <text class="message-text">你好！我是小耶，你的智能协作助手。有什么可以帮助你的吗？</text>
               </view>
               
               <!-- 快捷操作按钮 -->
               <view class="quick-actions">
-                <view class="quick-btn" @click="handleQuickAction('查看评分标准')">
-                  <text class="quick-btn-text">查看评分标准</text>
+                <view class="quick-btn" @click="handleQuickAction('项目进度分析')">
+                  <text class="quick-btn-text">项目进度分析</text>
                 </view>
                 <view class="quick-btn" @click="handleQuickAction('生成任务清单')">
                   <text class="quick-btn-text">生成任务清单</text>
                 </view>
-                <view class="quick-btn quick-btn-highlight" @click="handleQuickAction('个性化任务引导')">
+                <view class="quick-btn quick-btn-highlight" @click="handleQuickAction('获取帮助')">
                   <image src="https://workyean.oss-cn-beijing.aliyuncs.com/static/star.png" class="quick-icon-img" mode="aspectFit"></image>
-                  <text class="quick-btn-text">个性化任务引导</text>
+                  <text class="quick-btn-text">获取帮助</text>
                 </view>
               </view>
             </view>
@@ -600,24 +600,10 @@ export default {
       projects: [
         {
           id: 'p1',
-          name: '智慧养老APP',
-          type: 'IT开发',
-          lastModified: '12/26 14:30',
-          unread: 3
-        },
-        {
-          id: 'p2',
-          name: '辛亥革命论文',
-          type: '人文报告',
-          lastModified: '12/25 10:15',
+          name: '示例项目',
+          type: '通用模板',
+          lastModified: '刚刚',
           unread: 0
-        },
-        {
-          id: 'p3',
-          name: '营销分析报告',
-          type: '商业分析',
-          lastModified: '12/24 16:20',
-          unread: 5
         }
       ],
       recommendedItems: [
@@ -652,31 +638,10 @@ export default {
       tasks: [
         {
           id: 't1',
-          title: '需求分析文档',
-          project: '智慧养老APP',
-          dueDate: '12/28',
-          messageCount: 2
-        },
-        {
-          id: 't2',
-          title: '数据库设计',
-          project: '智慧养老APP',
-          dueDate: '12/30',
+          title: '示例任务',
+          project: '示例项目',
+          dueDate: '待定',
           messageCount: 0
-        },
-        {
-          id: 't3',
-          title: '资料收集',
-          project: '辛亥革命论文',
-          dueDate: '01/05',
-          messageCount: 1
-        },
-        {
-          id: 't4',
-          title: '市场调研报告',
-          project: '营销分析报告',
-          dueDate: '01/08',
-          messageCount: 3
         }
       ]
     }
